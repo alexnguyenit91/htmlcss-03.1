@@ -1,0 +1,6 @@
+font-family: 'Public Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 1.8rem;
+line-height: 1.56;
+color: #575D5E;
