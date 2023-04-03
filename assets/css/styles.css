@@ -74,11 +74,13 @@ a {
 
 .header-top {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .navbar {
-    margin-left: 350px;
+    min-width: 322px;
+    margin-left: 300px;
 }
 
 .navbar__list {
@@ -103,7 +105,7 @@ a {
     position: relative;
     bottom: -36px;
     left: 18px;
-    width: 16px;
+    min-width: 16px;
     height: 2px;
     content: "";
     display: inline-block;
@@ -138,7 +140,7 @@ a {
 }
 
 .hero__content {
-    width: 35%;
+    min-width: 35%;
 }
 
 .hero__heading {
@@ -206,7 +208,7 @@ a {
 
 .hero__media {
     position: relative;
-    width: 65%;
+    min-width: 65%;
     display: flex;
     justify-content: flex-end;
 }
@@ -231,8 +233,8 @@ a {
 
 .hero__media-blur {
     position: absolute;
-    width: 340px;
-    height: 340px;
+    min-width: 340px;
+    min-height: 340px;
     border-radius: 50%;
     background: #4dbb9a;
     filter: blur(137px);
@@ -265,4 +267,55 @@ a {
     bottom: 34px;
     right: -38px;
     z-index: 1;
+}
+
+/* Header branch */
+
+.header-branch {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 201px;
+    background: #e2eddf;
+    border-radius: 100.5px;
+}
+
+.branch__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.branch__link--google {
+    font-weight: 500;
+    font-size: 3.1rem;
+    color: var(--primary-color);
+}
+
+.branch__link--slack {
+    font-weight: 600;
+    font-size: 3.2rem;
+    color: var(--primary-color);
+}
+
+.branch__link--agworld {
+    margin-left: 11px;
+    font-size: 2.6rem;
+    color: #163c35;
+}
+
+.branch__link--riotinto {
+    font-family: "Sonsie One";
+    font-size: 2.3rem;
+    line-height: 30px;
+    color: var(--primary-color);
+}
+
+.branch__link--heroku {
+    margin-left: 14px;
+    font-weight: 600;
+    font-size: 1.9rem;
+    line-height: 28px;
+    letter-spacing: 0.105em;
+    color: var(--primary-color);
 }
